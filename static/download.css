@@ -1,0 +1,38 @@
+body{
+       background-image: url("project.jpeg");
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-size: cover;
+       font-weight:bolder;
+       color: #eae9f0;
+   }
+   .heading{
+       text-align: center;
+       font-size: large;
+       color:rgb(221, 31, 63);
+
+   }
+   .heading1{
+       text-align: center;
+       text-transform: uppercase;
+       background-color:darkblue
+   }
+   .download{
+       position: absolute;
+       text-align: center;
+       left: 30vw;
+       right: 30vw;
+       bottom: 2vw;
+       text-decoration: none;
+       background-color: cyan;
+       padding: 5px;
+       margin: 2px;
+       border-radius: 16px;
+       font-size: large;
+       color: black;
+   
+   
+   }
+   .download:hover{
+       background-color:blue;
+   }

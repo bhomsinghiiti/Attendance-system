@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body{
+        background-color:rgb(195, 248, 255)
+      }
+      .centered {
+        position: relative;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        color: white;
+      }
+      .header {
+        color: black;
+      }
+      p {
+        color: #111;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 0 24px;
+        text-justify: inter-word;
+      }
+      input[type="text"]{
+            padding :10px;
+            color:brown;
+            border-radius:4px;
+            text-align:center;
+            width: 400px;
+            height:40px;
+            font-size:30px;
+        
+        }
+
+      h1 {
+        color: #111;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1;
+        text-align: center;
+      }
+      #demo {
+        color: #111;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 22px;
+        line-height: 24px;
+        margin: 0 0 24px;
+        text-justify: inter-word;
+      }
+      .box1{
+            background-color:#d3eafd;
+            width:600px;
+            height:100px;
+            margin-top:20px;
+            margin-left:auto;
+            margin-right:auto;
+            box-shadow: 10px 10px 8px #888888;
+            border-radius:6px;
+            margin-bottom:20px;
+        }
+
+      .box{
+            background-color:#d0e6ff;
+            width:600px;
+            height:100px;
+            margin-top:20px;
+            margin-left:auto;
+            margin-right:auto;
+            box-shadow: 10px 10px 8px #888888;
+            border-radius:6px;
+            margin-bottom:20px;
+        }
+
+      .form-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .row1{
+        padding:20px;
+        margin-top:20px;
+      }
+      button[type="submit"]{
+            padding:20px;
+            background-color:#1f771f;
+            border:none;
+            color:white;
+            border-radius:6px;
+            cursor:pointer;
+            font-size:15px;
+            
+        }
+        button[type="submit"]:hover{
+            background-color:#62ad62;
+    
+        }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <div class="row1">
+          <title>sentiment analysis app</title>
+        </div>
+        <div class="box1">
+          <form>
+        <h1 class="header">Sentiment Analysis App</h1>
+         </form>
+        </div>
+         <div class="box">
+        <form method="POST" onSubmit="return validate();" class="form">
+          <div class="form-div">
+            <div><input type="text" name="text"font-size="20px" placeholder="Please enter a sentence here" size="30" align="center" autofocus="on"/>
+            </div>
+            <br/>
+            <br/>
+            <button type="submit" onclick="this.form.submit();">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+        <br />
+        <p id="demo" align="center">{{ message }}</p>
+      </div>
+    </div>
+  </body>
+</html>

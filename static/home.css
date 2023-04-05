@@ -1,0 +1,39 @@
+body{
+    background-image: url("project.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight:bolder;
+    color: #eae9f0;
+}
+.in{
+   margin: 5px;
+   display: inline-block;
+   background-color: rgba(13, 17, 245, 0.671);
+}
+.btn{
+    display: inline-block;
+    margin: 30px;
+    padding: 4px;
+    position: relative;
+    width: 90px;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+    background-color:cyan;
+    font-weight: bold;
+    border: none;
+
+}
+.btn:hover{
+    background-color:blue;
+}
+form{ 
+    text-align: center;
+    background-color: coral;
+    align-items: center;
+    position: fixed;
+    left: 30vw;
+    right: 30vw;
+   
+}
